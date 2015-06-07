@@ -1,0 +1,16 @@
+max x so that 3x < 1000 = 333
+max y so that 5y < 1000 = 199
+
+15 is divisible by both 5 and 3, so if we add all the multiples of 3 and 5, we'll double count multiples of 15. Can correct for this by withdrawing the sum of all multiples of 15 once.
+
+max z so that 15z < 1000 = 66
+
+Your grandma will have told you
+
+1+2+3...+N = N*(N+1)/2
+
+So answer is
+
+3*x*(x+1) / 2 + 5*y*(y+1) / 2 - 15*z*(z+1) / 2
+= 3*333*334/2 + 5*199*200 / 2 - 15*66*67 / 2
+= 233168
